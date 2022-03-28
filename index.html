@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+  <title>Quiz game</title>
+</head>
+<body>
+  <div class="quizzes-container">
+    <h1>Quiz</h1>
+    <div class="quiz-container">
+      <h2>First question</h2>
+      <div>
+        <p>What is the current capital of Japan?</p>
+      </div>
+      <form id="quiz-1">
+        <input name="answer" type="radio" value="a">Osaka
+        <input name="answer" type="radio" value="b">Kyoto
+        <input name="answer" type="radio" value="c">Tokyo
+      </form>
+      <button class="btn btn-primary" type="button" onclick="answerQuiz1();">Go</button>
+    </div>
+    <div class="quiz-container">
+      <h2>Second question</h2>
+      <div>
+        <p>Which scared animal can you find wandering in the Nara Park?</p>
+      </div>
+      <form id="quiz-2">
+        <input name="answer" type="radio" value="a">Deer
+        <input name="answer" type="radio" value="b">Monkey
+        <input name="answer" type="radio" value="c">Horse
+      </form>
+      <button class="btn btn-primary" type="button" onclick="answerQuiz2();">Go</button>
+    </div>
+    <div class="quiz-container">
+      <h2>Third question</h2>
+      <div>
+        <p>What do waiters or waitresses say welcome guests in Japanese restaurants?</p>
+      </div>
+      <form id="quiz-3">
+        <input name="answer" type="radio" value="a">Sayonara
+        <input name="answer" type="radio" value="b">Arigato
+        <input name="answer" type="radio" value="c">Irasshaimase
+      </form>
+      <button class="btn btn-primary" type="button" onclick="answerQuiz3();">Go</button>
+    </div>
+    <div class="quiz-container">
+      <h2>Fourth question</h2>
+      <div>
+        <p>Which Japanese fictional character is described as a young female cat with no mouth and a red bow?</p>
+      </div>
+      <form id="quiz-4">
+        <input name="answer" type="radio" value="a">Doraemon
+        <input name="answer" type="radio" value="b">Hello Kitty
+        <input name="answer" type="radio" value="c">Rilakkuma
+      </form>
+      <button class="btn btn-primary" type="button" onclick="answerQuiz4();">Go</button>
+    </div>
+    <div class="quiz-container">
+      <h2>Fifth question</h2>
+      <div>
+        <p>Which of the following dog breeds originates from Japan?</p>
+      </div>
+      <form id="quiz-5">
+        <input name="answer" type="radio" value="a">Cavalier
+        <input name="answer" type="radio" value="b">Shiba
+        <input name="answer" type="radio" value="c">Beagle
+      </form>
+      <button class="btn btn-primary" type="button" onclick="answerQuiz5();">Go</button>
+    </div>
+    <div class="quiz-container">
+      <h2>Sixth question</h2>
+      <div>
+        <p>Which Japanese island is a tropical paradise of jungles and beaches as well as a unique cultural hybrid?</p>
+      </div>
+      <form id="quiz-6">
+        <input name="answer" type="radio" value="a">Okinawa
+        <input name="answer" type="radio" value="b">Naoshima
+        <input name="answer" type="radio" value="c">Ishigaki
+      </form>
+      <button class="btn btn-primary" type="button" onclick="answerQuiz6();">Go</button>
+    </div>
+    <div class="quiz-container">
+      <h2>Seventh question</h2>
+      <div>
+        <p>How tall is the iconic Mount Fuji?</p>
+      </div>
+      <form id="quiz-7">
+        <input name="answer" type="radio" value="a">3,776m
+        <input name="answer" type="radio" value="b">3,902m
+        <input name="answer" type="radio" value="c">3,552m
+      </form>
+      <button class="btn btn-primary" type="button" onclick="answerQuiz7();">Go</button>
+    </div>
+    <div class="quiz-container">
+      <h2>Eighth question</h2>
+      <div>
+        <p>Japan is renowned for its incredible food. Which city is nicknamed the 'kitchen of Japan'?</p>
+      </div>
+      <form id="quiz-8">
+        <input name="answer" type="radio" value="a">Kobe
+        <input name="answer" type="radio" value="b">Osaka
+        <input name="answer" type="radio" value="c">Fukuoka
+      </form>
+      <button class="btn btn-primary" type="button" onclick="answerQuiz8();">Go</button>
+    </div>
+    <div class="quiz-container">
+      <h2>Ninth question</h2>
+      <div>
+        <p>Can you identify this banboo forest?</p>
+      </div>
+      <img src="嵐山写真.jpg" alt="嵐山写真" width="300" height="300">
+      <form id="quiz-9">
+        <input name="answer" type="radio" value="a">Arashiyama
+        <input name="answer" type="radio" value="b">Aokigahara
+        <input name="answer" type="radio" value="c">Tadasu no Mori
+      </form>
+      <button class="btn btn-primary" type="button" onclick="answerQuiz9();">Go</button>
+    </div>
+    <div class="quiz-container">
+      <h2>Tenth question</h2>
+      <div>
+        <p>Finally, How many prefectures are there in the country?</p>
+      </div>
+      <form id="quiz-10">
+        <input name="answer" type="radio" value="a">26
+        <input name="answer" type="radio" value="b">38
+        <input name="answer" type="radio" value="c">47
+      </form>
+      <button class="btn btn-primary" type="button" onclick="answerQuiz10();">Go</button>
+    </div>
+    <div id="score-container">
+       <p id="score-message"></p>
+    </div>
+    <button class="btn-score" type="button" onclick="showScore();">Total score</button>
+  </div>
+</body>
+</html>
